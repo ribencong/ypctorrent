@@ -6,3 +6,11 @@ What's it:
 	
 	
 https://github.com/breakwa11/GFWList2PAC
+----------------------------------------------
+with open(args.output, 'w') as f:
+	content = ""
+        for domain in domains:
+            content = content + domain +"\n"
+
+        f.write(content.encode('base64'))
+----------------------------------------------
